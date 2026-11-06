@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Abraham Institute | Building Inclusive Communities</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Shared Navigation -->
+<div id="site-header"></div>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Fostering interfaith and intercultural understanding.</h1>
+            <p class="hero-description">
+                Creating opportunities for understanding, respect
+                and connection across our diverse communities.
+            </p>
+            <a href="#about" class="btn btn-light btn-lg">Discover Our Work</a>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="about" class="intro-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <p class="section-label">WHO WE ARE</p>
+                    <h2>Building bridges through understanding.</h2>
+                </div>
+                <div class="col-lg-6">
+                    <p>
+                        The Abraham Institute works to foster understanding,
+                        respect and meaningful connections between people
+                        from diverse backgrounds.
+                    </p>
+                    <p>
+                        Through education, dialogue and community engagement,
+                        we create opportunities for people to learn from
+                        one another and build more inclusive communities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work -->
+    <section id="programs" class="programs-section">
+        <div class="container">
+            <p class="section-label">WHAT WE DO</p>
+            <h2>Creating meaningful change.</h2>
+
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="program-card">
+                        <h3>Education</h3>
+                        <p>Creating opportunities for learning, understanding and respectful dialogue.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="program-card">
+                        <h3>Community</h3>
+                        <p>Bringing people together to strengthen relationships and build connections.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="program-card">
+                        <h3>Leadership</h3>
+                        <p>Empowering young people to shape inclusive and connected communities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact -->
+    <section id="impact" class="impact-section">
+        <div class="container text-center">
+            <p class="section-label">OUR PURPOSE</p>
+            <h2>A more inclusive future starts with us.</h2>
+            <p>Through collaboration, education and shared experiences, we can create communities where everyone feels valued.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container text-center">
+            <h2>Let's create a more connected community.</h2>
+            <p>Get in touch to learn more about our work.</p>
+            <a href="/pages/contact.html" class="btn btn-outline-light">Contact Us</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+fetch('components/header.html')
+    .then(response => {
+        if (!response.ok) throw new Error('Header could not be loaded');
+        return response.text();
+    })
+    .then(html => {
+        document.getElementById('site-header').innerHTML = html;
+    })
+    .catch(error => console.error(error));
+
+     fetch('components/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.body.insertAdjacentHTML('beforeend', data);
+    });
+
+    fetch('components/sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.body.insertAdjacentHTML('beforeend', data);
+    });
+</script>
+</body>
+</html>
+
