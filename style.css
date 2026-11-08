@@ -662,6 +662,27 @@ footer {
    FOOTER
 ===================================== */
 
+/* FOOTER FUNDING ACKNOWLEDGEMENT */
+.site-footer-funding {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #d0d5dc;
+    padding: 18px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .site-footer-funding {
+        font-size: 11px;
+        padding: 16px 20px;
+        margin-bottom: 25px;
+    }
+}
+
 .site-footer {
     background-color: #0D1829;
     color: #ffffff;
@@ -1168,5 +1189,456 @@ footer {
 
     .program-contact-card {
         padding: 28px;
+    }
+}
+
+
+
+/* =====================================
+   RELIGION STUDIES PAGE
+===================================== */
+
+/* GENERAL SECTIONS */
+
+.religion-section {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.religion-highlight {
+    background: #f4f6f8;
+}
+
+/* INTRODUCTION */
+
+.religion-intro {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.religion-intro h2,
+.religion-section h2 {
+    color: #10243e;
+    font-size: clamp(30px, 4vw, 40px);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.religion-intro p {
+    color: #5c6672;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+/* GOLD DIVIDER */
+
+.religion-line {
+    width: 65px;
+    height: 4px;
+    background: #b18a53;
+    margin: 0 auto 30px;
+}
+
+/* FAITH AND LEARNING CARDS */
+
+.religion-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    height: 100%;
+    border-bottom: 4px solid #b18a53;
+    box-shadow: 0 5px 22px rgba(16, 36, 62, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.religion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(16, 36, 62, 0.12);
+}
+
+.religion-card > i {
+    color: #b18a53;
+    font-size: 38px;
+    margin-bottom: 22px;
+}
+
+.religion-card h3 {
+    color: #10243e;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.religion-card p {
+    color: #626d78;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* TOPIC LIST */
+
+.religion-list {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.religion-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 20px 25px;
+    margin-bottom: 12px;
+    background: #f4f6f8;
+    border-left: 3px solid #b18a53;
+}
+
+.religion-list-item i {
+    color: #b18a53;
+    font-size: 19px;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.religion-list-item p {
+    color: #4e5965;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* RESEARCH FEATURE */
+
+.religion-feature {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 45px;
+    background: #10243e;
+    border-left: 5px solid #b18a53;
+}
+
+.religion-feature h2 {
+    color: #d5b887;
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+
+.religion-feature p {
+    color: #e5eaf0;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+/* GOLDEN RULE BUTTON */
+
+.religion-button {
+    display: inline-block;
+    background: #10243e;
+    color: #ffffff;
+    border: 2px solid #10243e;
+    padding: 14px 26px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.religion-button:hover {
+    background: #b18a53;
+    border-color: #b18a53;
+    color: #ffffff;
+}
+
+/* CALL TO ACTION */
+
+.religion-cta {
+    background: #10243e;
+    color: #ffffff;
+    padding: 85px 20px;
+    text-align: center;
+}
+
+.religion-cta h2 {
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 40px);
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.religion-cta p {
+    color: #e0e5eb;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.religion-cta .religion-button {
+    background: #b18a53;
+    border-color: #b18a53;
+}
+
+.religion-cta .religion-button:hover {
+    background: #927044;
+    border-color: #927044;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 767px) {
+
+    .religion-section {
+        padding: 65px 0;
+    }
+
+    .religion-card {
+        padding: 30px 25px;
+    }
+
+    .religion-feature {
+        padding: 30px 25px;
+    }
+
+    .religion-feature h2 {
+        font-size: 25px;
+    }
+
+    .religion-list-item {
+        padding: 17px 18px;
+        gap: 13px;
+    }
+
+    .religion-cta {
+        padding: 65px 20px;
+    }
+}
+
+
+
+
+/* =====================================
+   INTERCULTURAL UNDERSTANDING PARTNERSHIPS
+===================================== */
+
+/* SECTIONS */
+
+.program-section {
+    padding: 85px 0;
+    background: #ffffff;
+}
+
+.program-highlight {
+    background: #f4f6f8;
+}
+
+/* SECTION HEADINGS */
+
+.program-section h2 {
+    color: #10243e;
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.program-line {
+    width: 65px;
+    height: 4px;
+    background: #b18a53;
+    margin: 20px 0 30px;
+}
+
+.program-section .text-center .program-line {
+    margin: 20px auto 30px;
+}
+
+/* INTRODUCTION */
+
+.program-intro {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.program-intro p {
+    color: #555f6a;
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 20px;
+}
+
+/* SUPPORT CARDS */
+
+.program-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    height: 100%;
+    border-bottom: 3px solid #b18a53;
+    box-shadow: 0 5px 22px rgba(16, 36, 62, 0.06);
+}
+
+.program-card > i {
+    color: #b18a53;
+    font-size: 36px;
+    margin-bottom: 22px;
+}
+
+.program-card h3 {
+    color: #10243e;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.program-card p {
+    color: #626d78;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* PARTNERSHIP LIST */
+
+.partner-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.partner-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px 0;
+    border-bottom: 1px solid #dce1e6;
+}
+
+.partner-list-item:last-child {
+    border-bottom: none;
+}
+
+.partner-list-item > i {
+    color: #b18a53;
+    font-size: 22px;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.partner-list-item p {
+    color: #555f6a;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.partner-list-item strong {
+    color: #10243e;
+    font-size: 18px;
+}
+
+/* FEATURE PANEL */
+
+.program-feature {
+    background: #10243e;
+    color: #ffffff;
+    padding: 55px;
+    border-left: 5px solid #b18a53;
+}
+
+.program-feature h2 {
+    color: #ffffff;
+    font-size: clamp(28px, 4vw, 36px);
+    margin-bottom: 22px;
+}
+
+.program-feature p {
+    color: #e0e5eb;
+    font-size: 16px;
+    line-height: 1.85;
+    max-width: 850px;
+    margin-bottom: 0;
+}
+
+/* CONTACT CTA */
+
+.program-cta {
+    background: #10243e;
+    color: #ffffff;
+    padding: 85px 20px;
+    text-align: center;
+}
+
+.program-cta h2 {
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 40px);
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.program-cta p {
+    color: #e0e5eb;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+/* BUTTON */
+
+.program-button {
+    display: inline-block;
+    background: #b18a53;
+    color: #ffffff;
+    border: 2px solid #b18a53;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.program-button:hover {
+    background: #927044;
+    border-color: #927044;
+    color: #ffffff;
+}
+
+/* FUNDING ACKNOWLEDGEMENT */
+
+.funding-note {
+    background: #f4f6f8;
+    border-left: 4px solid #b18a53;
+    padding: 22px 28px;
+    margin: 35px 0;
+    color: #626d78;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+    .program-section {
+        padding: 60px 0;
+    }
+
+    .program-card {
+        padding: 30px 24px;
+    }
+
+    .program-feature {
+        padding: 32px 25px;
+    }
+
+    .program-cta {
+        padding: 65px 20px;
+    }
+
+    .partner-list-item {
+        gap: 12px;
+    }
+
+    .funding-note {
+        padding: 18px 20px;
     }
 }

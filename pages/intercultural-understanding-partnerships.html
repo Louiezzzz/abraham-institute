@@ -263,7 +263,7 @@
             </p>
 
             <a href="../pages/contact.html" class="program-button">
-                Book a Session
+                Contact Us
                 <i class="fa-solid fa-arrow-right ms-2"></i>
             </a>
 
@@ -282,24 +282,28 @@
     <!-- SHARED FOOTER -->
     <div id="footer"></div>
 
-    <!-- LOAD SHARED COMPONENTS -->
+    <!-- SHARED SOCIAL SIDEBAR -->
+    <div id="sidebar"></div>
+
+
+    <!-- COMPONENT LOADING -->
     <script>
         fetch('../components/header.html')
             .then(response => response.text())
-            .then(data => {
-                document.getElementById('header').innerHTML = data;
-            });
-
-        fetch('../components/sidebar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('sidebar').innerHTML = data;
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
             });
 
         fetch('../components/footer.html')
             .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+
+        fetch('../components/sidebar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('sidebar').innerHTML = html;
             });
     </script>
 
