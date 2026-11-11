@@ -1,5 +1,5 @@
 
-/* GENERAL */
+/* #region GENERAL */
 body {
     font-family: Arial, sans-serif;
     color: #263447;
@@ -666,12 +666,13 @@ footer {
 .site-footer-funding {
     width: 100%;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     font-style: italic;
     line-height: 1.6;
     color: #d0d5dc;
     padding: 18px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 3px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.15);
     margin-bottom: 30px;
 }
 
@@ -686,7 +687,7 @@ footer {
 .site-footer {
     background-color: #0D1829;
     color: #ffffff;
-    padding: 65px 0 45px;
+    padding: 30px 0 45px;
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 18px;
     line-height: 1.7;
@@ -888,7 +889,7 @@ footer {
 }
 
 
-
+/* #region SHARED PROGRAM PAGE STYLES */
 /* ========================================
    SHARED PROGRAM PAGE STYLES
 ======================================== */
@@ -1191,9 +1192,9 @@ footer {
         padding: 28px;
     }
 }
+/* #endregion SHARED PROGRAM PAGE STYLES */
 
-
-
+/* #region RELIGION STUDIES PAGE */
 /* =====================================
    RELIGION STUDIES PAGE
 ===================================== */
@@ -1415,10 +1416,9 @@ footer {
         padding: 65px 20px;
     }
 }
+/* #endregion RELIGION STUDIES PAGE */
 
-
-
-
+/* #region Intercultural Understanding Partnerships */
 /* =====================================
    INTERCULTURAL UNDERSTANDING PARTNERSHIPS
 ===================================== */
@@ -1642,3 +1642,522 @@ footer {
         padding: 18px 20px;
     }
 }
+/* #endregion Intercultural Understanding Partnerships */
+
+/* CONTACT PAGE - PROGRAM BUTTON SPACING */
+.contact-note .program-gold-button {
+    display: inline-block;
+    position: static;
+    margin-top: 18px;
+    clear: both;
+}
+
+
+/* #region INTERFAITH RESOURCES PAGE */
+
+/* HERO */
+.resource-hero {
+    background: #10243e;
+    color: #ffffff;
+    padding: 110px 20px;
+    text-align: center;
+}
+
+.resource-hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.resource-eyebrow {
+    display: inline-block;
+    color: #c5a16d;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+}
+
+.resource-hero h1 {
+    color: #ffffff;
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.resource-hero p {
+    color: #e0e5eb;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* INTRODUCTION */
+.resource-section {
+    padding: 85px 0;
+    background: #ffffff;
+}
+
+.resource-intro {
+    max-width: 850px;
+    margin: 0 auto 65px;
+}
+
+.resource-section-label {
+    display: block;
+    color: #b18a53;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.resource-intro h2,
+.resource-feature h2 {
+    color: #10243e;
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.resource-line {
+    width: 65px;
+    height: 4px;
+    background: #b18a53;
+    margin: 22px auto 30px;
+}
+
+.resource-intro p {
+    color: #626d78;
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 18px;
+}
+
+/* RESOURCE GRID */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.resource-card {
+    background: #ffffff;
+    padding: 35px 30px;
+    border: 1px solid #e3e7eb;
+    border-bottom: 3px solid #b18a53;
+    box-shadow: 0 5px 22px rgba(16, 36, 62, 0.06);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(16, 36, 62, 0.11);
+}
+
+.resource-card-icon {
+    color: #b18a53;
+    font-size: 34px;
+    margin-bottom: 22px;
+}
+
+.resource-card h3 {
+    color: #10243e;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.resource-card > p {
+    color: #626d78;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.resource-card-links {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.resource-card-links a {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #10243e;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.resource-card-links a i {
+    color: #b18a53;
+    width: 17px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.resource-card-links a:hover {
+    color: #b18a53;
+}
+
+/* GOLDEN RULE FEATURE */
+.resource-feature {
+    background: #f4f6f8;
+    padding: 85px 20px;
+    text-align: center;
+}
+
+.resource-feature-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resource-feature h2 {
+    margin-bottom: 22px;
+}
+
+.resource-feature p {
+    color: #626d78;
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 18px;
+}
+
+.resource-feature .program-gold-button {
+    margin-top: 18px;
+    display: inline-block;
+}
+
+/* CONTACT CTA */
+.resource-cta {
+    background: #10243e;
+    color: #ffffff;
+    padding: 85px 20px;
+    text-align: center;
+}
+
+.resource-cta h2 {
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 40px);
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.resource-cta p {
+    color: #e0e5eb;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+.resource-cta .program-gold-button {
+    display: inline-block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+    .resource-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .resource-hero {
+        padding: 80px 20px;
+    }
+
+    .resource-section {
+        padding: 60px 0;
+    }
+
+    .resource-intro {
+        margin-bottom: 45px;
+    }
+
+    .resource-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .resource-card {
+        padding: 30px 25px;
+    }
+
+    .resource-feature,
+    .resource-cta {
+        padding: 65px 20px;
+    }
+}
+
+/* #endregion INTERFAITH RESOURCES PAGE */
+
+
+/* #region PARTNERS & COLLABORATIONS */
+
+/* =====================================
+   HERO
+===================================== */
+
+.partner-hero {
+    background: #10243e;
+    color: #ffffff;
+    padding: 110px 20px;
+    text-align: center;
+}
+
+.partner-hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.partner-eyebrow {
+    display: inline-block;
+    color: #c5a16d;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+}
+
+.partner-hero h1 {
+    color: #ffffff;
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.partner-hero p {
+    color: #e0e5eb;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+
+/* =====================================
+   INTRODUCTION
+===================================== */
+
+.partner-section {
+    padding: 85px 0;
+    background: #ffffff;
+}
+
+.partner-intro {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.partner-section-label {
+    display: block;
+    color: #b18a53;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.partner-intro h2,
+.partner-feature-heading h2 {
+    color: #10243e;
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.partner-line {
+    width: 65px;
+    height: 4px;
+    background: #b18a53;
+    margin: 22px auto 30px;
+}
+
+.partner-intro p {
+    color: #626d78;
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 20px;
+}
+
+
+/* =====================================
+   FEATURED PARTNER
+===================================== */
+
+.partner-feature-section {
+    background: #f4f6f8;
+    padding: 85px 0;
+}
+
+.partner-feature-card {
+    background: #ffffff;
+    padding: 60px;
+    border-left: 5px solid #b18a53;
+    box-shadow: 0 5px 25px rgba(16, 36, 62, 0.06);
+}
+
+.partner-feature-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.partner-feature-heading .partner-line {
+    margin: 22px auto 30px;
+}
+
+.partner-feature-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.partner-symbol {
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+    background: #10243e;
+    color: #c5a16d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+}
+
+.partner-feature-text {
+    flex: 1;
+}
+
+.partner-feature-text p {
+    color: #626d78;
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 18px;
+}
+
+.partner-feature-text > p:last-of-type {
+    margin-bottom: 0;
+}
+
+
+/* =====================================
+   FUNDING ACKNOWLEDGEMENT
+===================================== */
+
+.partner-funding-note {
+    background: #f4f6f8;
+    border-left: 4px solid #b18a53;
+    padding: 22px 25px;
+    margin-top: 30px;
+}
+
+.partner-funding-note h3 {
+    color: #10243e;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.partner-funding-note p {
+    color: #626d78;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+
+/* =====================================
+   CONTACT CTA
+===================================== */
+
+.partner-cta {
+    background: #10243e;
+    color: #ffffff;
+    padding: 85px 20px;
+    text-align: center;
+}
+
+.partner-cta h2 {
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 40px);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 22px;
+}
+
+.partner-cta p {
+    color: #e0e5eb;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+.partner-cta .program-gold-button {
+    display: inline-block;
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 767px) {
+
+    .partner-hero {
+        padding: 80px 20px;
+    }
+
+    .partner-section {
+        padding: 60px 0;
+    }
+
+    .partner-feature-section {
+        padding: 60px 0;
+    }
+
+    .partner-feature-card {
+        padding: 35px 25px;
+    }
+
+    .partner-feature-heading {
+        margin-bottom: 30px;
+    }
+
+    .partner-feature-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .partner-feature-text {
+        width: 100%;
+    }
+
+    .partner-feature-text p {
+        font-size: 15px;
+    }
+
+    .partner-funding-note {
+        padding: 20px;
+        margin-top: 25px;
+    }
+
+    .partner-cta {
+        padding: 65px 20px;
+    }
+}
+
+/* #endregion PARTNERS & COLLABORATIONS */

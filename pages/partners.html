@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Partners & Collaborations | The Abraham Institute</title>
+    <meta name="description" content="Discover the partnerships and collaborations that support the work and mission of The Abraham Institute.">
+
+    <link rel="icon" type="image/png" href="../favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+
+    <!-- HERO -->
+    <section class="partner-hero">
+        <div class="container">
+            <div class="partner-hero-content">
+
+                <span class="partner-eyebrow">
+                    WORKING TOGETHER • BUILDING UNDERSTANDING
+                </span>
+
+                <h1>Partners & Collaborations</h1>
+
+                <p>
+                    Building meaningful partnerships to strengthen
+                    intercultural understanding and create positive
+                    change in our communities.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="partner-section">
+        <div class="container">
+
+            <div class="partner-intro text-center">
+
+                <span class="partner-section-label">
+                    STRONGER TOGETHER
+                </span>
+
+                <h2>Our Partners</h2>
+
+                <div class="partner-line"></div>
+
+                <p>
+                    Our partners help us to expand our reach and fulfil
+                    our mission. Working in close collaboration, we help
+                    more students, teachers and parents to develop the
+                    skills and confidence to interact with people from
+                    different cultural and faith backgrounds.
+                </p>
+
+                <p>
+                    Through these relationships, we work towards building
+                    positive, respectful relationships and creating
+                    communities where people feel understood, valued
+                    and included.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FEATURED PARTNER -->
+    <section class="partner-feature-section">
+        <div class="container">
+
+            <div class="partner-feature-card">
+
+                <!-- PARTNER HEADING -->
+                <div class="partner-feature-heading">
+
+                    <span class="partner-section-label">
+                        OUR MENTOR ORGANISATION
+                    </span>
+
+                    <h2>Together For Humanity</h2>
+
+                    <div class="partner-line"></div>
+
+                </div>
+
+
+                <!-- PARTNER CONTENT -->
+                <div class="partner-feature-content">
+
+                    <div class="partner-symbol">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+
+                    <div class="partner-feature-text">
+
+                        <p>
+                            Together For Humanity is more than a partner;
+                            it is our mentor organisation.
+                        </p>
+
+                        <p>
+                            Its support and guidance have helped the
+                            Abraham Institute develop its work and
+                            strengthen its capacity to support students,
+                            teachers and communities in developing
+                            intercultural understanding.
+                        </p>
+
+                        <p>
+                            This relationship reflects the importance
+                            of collaboration in creating opportunities
+                            for people from different cultural and faith
+                            backgrounds to connect, learn from one
+                            another and build respectful relationships.
+                        </p>
+
+
+                        <!-- ACKNOWLEDGEMENT OF SUPPORT -->
+                        <div class="partner-funding-note">
+
+                            <h3>Acknowledgement of Support</h3>
+
+                            <p>
+                                Funding for The Abraham Institute during
+                                2022–2025 was provided by Together For Humanity
+                                through the Australian Government Department
+                                of Education.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT CTA -->
+    <section class="partner-cta">
+        <div class="container">
+
+            <h2>Interested in Working Together?</h2>
+
+            <p>
+                We welcome opportunities to collaborate with schools,
+                organisations and community groups who share our
+                commitment to intercultural understanding, respect
+                and inclusion.
+            </p>
+
+            <a href="contact.html" class="program-gold-button">
+                Get in Touch
+                <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- SIDEBAR -->
+    <div id="sidebar"></div>
+
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        fetch('../components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        fetch('../components/sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML = data;
+            });
+
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>
